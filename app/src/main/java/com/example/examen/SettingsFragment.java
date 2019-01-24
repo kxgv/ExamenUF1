@@ -1,12 +1,16 @@
 package com.example.examen;
 
 
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.preference.PreferenceFragmentCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 
 /**
@@ -14,6 +18,10 @@ import android.view.ViewGroup;
  */
 public class SettingsFragment extends PreferenceFragmentCompat {
 
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,5 +37,4 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     public SettingsFragment() {
         // Required empty public constructor
     }
-
 }
